@@ -139,7 +139,7 @@ def decrypt_aes(ciphertext_b64: str, password: str) -> str:
 #                   ASYMMETRIC (RSA) FUNCTIONS
 # ------------------------------------------------------------------
 
-def generate_rsa_keys() -> (str, str):
+def generate_rsa_keys() -> tuple[str, str]:
     """
     Generates a new 2048-bit RSA key pair.
     Returns (public_key_pem, private_key_pem) as strings.

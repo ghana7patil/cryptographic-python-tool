@@ -106,7 +106,7 @@ class App(ctk.CTk):
         self.copy_button = ctk.CTkButton(self.output_label_frame, text="Copy to Clipboard", width=150, command=self._on_copy_to_clipboard)
         self.copy_button.grid(row=0, column=1, sticky="e", padx=5)
         
-        self.output_textbox = ctk.CTkTextbox(self.output_frame, wrap="word", state="disabled", border_width=0, fg_color_disabled="gray14")
+        self.output_textbox = ctk.CTkTextbox(self.output_frame, wrap="word", state="disabled", border_width=0)
         self.output_textbox.grid(row=1, column=0, sticky="nsew")
 
     def _create_aes_key_frame(self):
